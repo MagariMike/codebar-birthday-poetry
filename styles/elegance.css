@@ -8,9 +8,17 @@
   --pastel-gray: #d3d3d3;
 }
 
-/* Apply elegant fonts */
 body {
-  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 0; /* Remove gaps between grid elements */
+  height: 100vh;
+  /* Apply elegant fonts and subtle pastel colors */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #555;
   background-color: var(--pastel-cream);
 }
@@ -28,35 +36,87 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
-/* Define subtle pastel colors */
-:root {
-  --pastel-cream: #f9f5f0;
-  --pastel-gray: #d3d3d3;
+header {
+  grid-area: header;
+  background-color: transparent; /* Remove distinct background colors */
+  color: #333;
+  padding: 10px;
 }
 
-/* Apply elegant fonts and subtle pastel colors */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #555;
-  background-color: var(--pastel-cream);
+aside {
+  grid-area: sidebar;
+  background-color: transparent; /* Remove distinct background colors */
+  color: #333;
+  padding: 10px;
 }
 
-header,
-aside,
-main,
-footer {
+main {
+  grid-area: main;
+  padding: 10px;
   background-color: transparent; /* Remove distinct background colors */
   color: #333;
 }
 
+footer {
+  grid-area: footer;
+  background-color: transparent; /* Remove distinct background colors */
+  color: #333;
+  padding: 10px;
+}
+
 #theme-dropdown-button {
+  display: block;
+  padding: 8px 16px;
   background-color: var(--pastel-gray);
   color: #333;
   border: none;
+  cursor: pointer;
+}
+
+#theme-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--pastel-gray);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure dropdown is above other elements */
+}
+
+#theme-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Adjust the display of dropdown content */
+#theme-dropdown-button:hover + #theme-dropdown-content,
+#theme-dropdown-content:hover {
+  display: block;
+}
+
+#theme-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#theme-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
 #theme-dropdown-content a:hover {
-  background-color: var(--pastel-gray);
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
 }
 
 /* Additional elegant styling */
