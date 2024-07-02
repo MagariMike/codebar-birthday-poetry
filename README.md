@@ -24,7 +24,7 @@ This will allow you to save a copy of the repo to your own Github profile.
   
 
 
-- **Step 3:** Navigate to the folder where you would like to save your new git folder and run the following command: 
+- **Step 3:** Open your IDE and use the terminal to navigate to the folder where you would like to save your new git folder and run the following command: 
 
 Once you have navigated within the folder using the terminal, enter the command:
 
