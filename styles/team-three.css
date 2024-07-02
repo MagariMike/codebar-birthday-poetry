@@ -10,7 +10,8 @@ body {
     gap: 0; /* Remove gaps between grid elements */
     height: 100vh;
     font-family: sans-serif;
-    line-height: 1.5
+    line-height: 1.5;
+
   }
   
   header {
@@ -28,6 +29,8 @@ body {
   main {
     grid-area: main;
     padding: 10px;
+    background-color: #333333;
+    color: white;
   }
   
   footer {
