@@ -32,7 +32,7 @@ git clone YOUR_GITHUB_REPO_LINK_GOES_HERE
 
 - **Step 4 - Writing your verse:** Now you should have a folder on your computer which has the project files within it which you have pulled down from your repo. 
 
-Find the index.html file and open it. Within this file you will be able to see various <p> tags with different verse names. Find the verse number that you have been asigned and begin to add your desired text. 
+Find the index.html file and open it. Within this file you will be able to see various p tags with different verse names. Find the verse number that you have been asigned and begin to add your desired text. 
 
 - **Step 5 - Making your first commit:** One you have added some text that you are happy with, its time to do your first git commit action. 
 
