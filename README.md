@@ -23,18 +23,11 @@ This will allow you to save a copy of the repo to your own Github profile.
 - **Step 2:** Make sure you have navigated to the "forked" version of the repo that you just saved within your Github profile, then click the green button which says "code". This will provide you with a link that you can copy.
   
 
+- **Step 3:** Open your IDE and use the terminal to navigate to where you would like to save your new git folder and run the following command: 
 
-- **Step 3:** Open your IDE and use the terminal to navigate to the folder where you would like to save your new git folder and run the following command: 
-
-Once you have navigated within the folder using the terminal, enter the command:
 
 ```bash
 git clone YOUR_GITHUB_REPO_LINK_GOES_HERE
-```
-Then enter each of these 3 commands separately one after the other, hitting enter after you have copied in a line to run the command:
-
-```bash
-git remote add origin YOUR_LINK_GOES_HERE
 ```
 
 - **Step 4 - Writing your verse:** Now you should have a folder on your computer which has the project files within it which you have pulled down from your repo. 
