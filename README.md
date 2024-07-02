@@ -24,27 +24,18 @@ This will allow you to save a copy of the repo to your own Github profile.
   
 
 
-- **Step 3:** Create a folder on your computer and navigate to it via the terminal. You can either open a dedicated terminal window on your computer, or open a terminal within your IDE environment.
+- **Step 3:** Navigate to the folder where you would like to save your new git folder and run the following command: 
 
 Once you have navigated within the folder using the terminal, enter the command:
 
 ```bash
-git init 
+git clone YOUR_GITHUB_REPO_LINK_GOES_HERE
 ```
 Then enter each of these 3 commands separately one after the other, hitting enter after you have copied in a line to run the command:
 
 ```bash
 git remote add origin YOUR_LINK_GOES_HERE
 ```
-
-```bash
-git branch -M main
-```
-
-```bash
-git push -u origin main
-```
-
 
 - **Step 4 - Writing your verse:** Now you should have a folder on your computer which has the project files within it which you have pulled down from your repo. 
 
@@ -90,9 +81,9 @@ Remember you can repeat the actions from step 5 to update your code if you need 
 
 ### Opening a Pull Request:
 
-Opening a pull request sends a request to the original repo (not the local one that you forked) and asks to merge your local repo with it so that the original copy has all of your changes. The owner of the original repo can that accept or deny your changes or add any comments etc. 
+Opening a pull request sends a request to the original repo and asks to merge your local repo with it so that the original copy has all of your changes. The owner of the original repo can that accept or deny your changes or add any comments etc. 
 
-In the original repo https://github.com/MagariMike/codebar-birthday-poetry.git, select the “Pull Requests” tab along the top bar of the page. 
+In your local repo that you forked, select the “Pull Requests” tab along the top bar of the page. 
 
 You can add any notes that you’d like in the box that appears and then click “Create Pull Request”. This will send a request and one of the tutors will then approve this later in the session.
 
